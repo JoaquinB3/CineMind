@@ -4,16 +4,14 @@ export const runtime = "nodejs"
 export const maxDuration = 60
 
 // URL base de tu servidor Ollama. Por defecto apunta a la instancia local.
-const OLLAMA_URL = process.env.OLLAMA_URL ?? "http://localhost:11434"
-// Modelo a usar. Cambialo por el que tengas descargado (ej: "llama3.2", "mistral", etc.)
+const OLLAMA_URL = process.env.OLLAMA_URL ?? "http://localhost:5123"
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL ?? "llama3.2"
 
-const SYSTEM_PROMPT = `Eres Cinemind, un asistente experto en cine y series.
-Respondes en español de forma clara, cercana y entusiasta.
-Tus áreas: recomendaciones de películas, sinopsis sin spoilers (a menos que te los pidan),
-directores, actores, géneros, curiosidades, premios y comparativas.
-Si te preguntan algo que no tiene que ver con el cine, redirige amablemente la conversación hacia las películas.
-Usa formato breve y legible. No inventes datos: si no estás seguro, dilo.`
+const SYSTEM_PROMPT = `You are Cinemind, an expert assistant in movies and TV series.
+IMPORTANT: You MUST always respond in English only, regardless of the language the user writes in. Never respond in Spanish or any other language. This rule has no exceptions.
+Your areas: movie recommendations, spoiler-free synopses (unless asked), directors, actors, genres, trivia, awards, and comparisons.
+If asked about something unrelated to cinema, gently redirect the conversation back to movies.
+Keep responses brief and readable. Never make up data: if unsure, say so.`
 
 type ChatMessage = {
   role: "user" | "assistant" | "system"
