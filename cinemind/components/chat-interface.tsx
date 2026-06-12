@@ -9,10 +9,10 @@ import { ChatMessage, type Message } from "@/components/chat-message"
 import { cn } from "@/lib/utils"
 
 const SUGGESTIONS = [
-  "Recomiéndame 3 películas de ciencia ficción de los 80",
-  "¿De qué trata Cinema Paradiso sin spoilers?",
-  "Compara a Tarantino con los hermanos Coen",
-  "Películas para una noche de suspenso",
+  "Is this movie safe to watch with kids?",
+  "Give me a family-friendly movie for tonight",
+  "Best animated movies that adults will also love",
+  "Recommend 3 non-stop action movies",
 ]
 
 function createId() {
