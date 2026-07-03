@@ -115,7 +115,7 @@ export function ChatInterface() {
           </div>
           <div className="leading-tight">
             <h1 className="text-sm font-semibold tracking-tight text-foreground">
-              Cinemind
+              CineBot
             </h1>
             <p className="text-xs text-muted-foreground">Tu asistente de cine</p>
           </div>
@@ -206,7 +206,7 @@ function Welcome({
         ¿Qué vemos esta noche?
       </h2>
       <p className="mt-3 max-w-md text-pretty text-sm leading-relaxed text-muted-foreground">
-        Soy Cinemind. Pregúntame por recomendaciones, tramas, directores o cualquier
+        Soy CineBot. Pregúntame por recomendaciones, tramas, directores o cualquier
         curiosidad del mundo del cine.
       </p>
 

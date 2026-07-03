@@ -10,7 +10,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Cinemind — Tu asistente de cine',
+  title: 'CineBot — Tu asistente de cine',
   description:
     'Chatea con un modelo de IA sobre películas: recomendaciones, tramas, directores y curiosidades.',
   generator: 'v0.app',
